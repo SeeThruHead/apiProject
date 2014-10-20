@@ -1,0 +1,44 @@
+@import '../bower_components/scut/dist/_scut.scss';
+
+$base-color: #000;
+
+
+body {
+  background-color: $base-color;
+  color: white;
+}
+.yearContainer {
+  @extend %scut-clearfix;
+  img {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+}
+.thumbContainer {
+  width: 10%;
+  @include scut-ratio-box(.656);
+  float: left;
+}
+.thumbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modal {
+  background-color: black;
+  display: none;
+  width: 70%;
+  @include scut-center-transform;
+  position: fixed;
+  padding: 5%;
+  z-index: 100;
+  img {
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+  }
+}
+.description {
+  padding: 5%;
+}

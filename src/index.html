@@ -1,0 +1,42 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cover Viewer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<section class="menu">
+
+</section>
+<section id="page">
+</section>
+
+<script id="template" type="text/x-handlebars-template">
+  <h2 class="year">{{year}}</h2>
+
+    {{#each comics}}
+      <a href="{{this.url}}" target="_blank">
+        <div class="thumbContainer">
+          <img src="{{this.cover}}" class="thumbs" alt="">
+        </div>
+      </a>
+      <div class="modal">
+        <img src="{{this.cover}}"alt="">
+        <h3 class="title">{{this.title}}</h3>
+        <p class="description">{{this.description}}</p>
+      </div>
+    {{/each}}
+
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="bower_components/handlebars/handlebars.min.js"></script>
+<script src="scripts/app.js"></script>
+</body>
+</html>

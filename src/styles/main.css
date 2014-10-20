@@ -1,0 +1,62 @@
+/*
+* Scut, a collection of Sass utilities
+* to ease and improve our implementations of common style-code patterns.
+* v1.0.1
+* Docs at http://davidtheclark.github.io/scut
+*/
+.yearContainer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body {
+  background-color: #000;
+  color: white; }
+
+.yearContainer img {
+  display: block;
+  float: left;
+  width: 100%; }
+
+.thumbContainer {
+  width: 10%;
+  overflow: hidden;
+  position: relative;
+  float: left; }
+  .thumbContainer:before {
+    content: "";
+    display: block;
+    height: 0;
+    padding-top: 152.43902%; }
+
+.thumbs {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.modal {
+  background-color: black;
+  display: none;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: fixed;
+  padding: 5%;
+  z-index: 100; }
+  .modal img {
+    width: 50%;
+    float: left;
+    margin-right: 5%; }
+
+.description {
+  padding: 5%; }
+
+/*# sourceMappingURL=main.css.map */
